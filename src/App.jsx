@@ -1,17 +1,20 @@
 import { useState } from 'react'
 
 import Chat from './Chat'
+import Navbar from './Navbar'
+import { BrowserRouter ,Routes,Route } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-   
-      <Chat />
-  
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Chat />} />
+    </Routes>
+    <Navbar />
 
-    </>
+    </BrowserRouter>
   )
 }
 
