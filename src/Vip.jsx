@@ -5,7 +5,7 @@ import Bank from './Bank';
 
 export default function Vip() {
     const [bank , setBank] = useState(false);
-    console.log(bank);
+    console.log("bank state:", bank);
   return ( <>
   {bank && <Bank setBank={setBank}/>}
     <div className='h-dvh w-dvw flex justify-center items-center gap-7 bg-black '>
